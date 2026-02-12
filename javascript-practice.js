@@ -38,21 +38,23 @@ const form = document.getElementById("form");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let emailValue = email.value.trim();
-  let passwordValue = password.value.trim();
+form.addEventListener("submit",function(event){
+  event.preventDefault();
+
+  let emailValue = email.value;
+
+  let passwordValue = password.value;
 
   /*function Validity() {
     let formValue = form.value;
-    let emailValue = email.value;
-    let passwordValue = password.value;
-    */
+    let emailValue = email.value.trim().toLowerCase();
+    let passwordValue = password.value.trim().<10;
+  */
 
   if(emailValue === "admin@example.com" && passwordValue === "password123") {
     console.log("Login successful!");
   } else {
     console.log("Invalid email or password.");
   }
-}
-);
+});
+
