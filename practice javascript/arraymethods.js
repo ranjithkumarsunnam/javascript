@@ -505,9 +505,3 @@ let emails =["admin@gmail","ramu1@email","raki33@gmail.com"];
 emails.forEach((emails)=>{
 console.log(emails)
 });
-
-
-
-
-
-
