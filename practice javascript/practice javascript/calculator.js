@@ -7,7 +7,7 @@ const Result =document.getElementById("result");
 //Add function
 AddBtn.addEventListener("click",(click)=>{
     let value1  =number(num1Input.value);
-    let valu2 =number(num2Input.value);
+    let value2 =number(num2Input.value);
     let sum = value1 + value2;
     Result.textContent = "Result: " + sum;
 });
