@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+
+
+    <div id="title">
+        <h1 id="first">DOM Practice</h1>
+        <p>this is my DOM Practice</p>
+    </div>
+    <div id="head">
+        <h1 id="second">DOM Practice for DAily</h1>
+        <p id="para">this is my DOM Practice2</p>
+    </div>
+
+    <Script>
+        let title=document.getElementById("title")
+        let first=document.getElementById("first");
+        // title.removeChild(first)
+
+
+        let head=document.getElementById("head"); //div id is parent element
+        let second=document.getElementById("second");
+        let para=document.getElementById("para");
+
+
+        //head.removeChild(second)
+
+
+        //new Element
+
+        let x =document.createElement('p')
+        x.innerText="this is new paragraph"
+
+        second.replaceChildren(x)
+
+        head.removeChild(para);
+
+        head.insertBefore(x,second)
+        console.log(head.innerText)
+
+
+
+
+
+
+
+
+
+
+    </Script>
+</body>
+</html>

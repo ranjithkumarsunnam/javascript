@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div id="first">
+        <p>
+            this is paragraph 1
+
+        </p>
+
+    </div>
+    <div id="second">
+
+        <p id="last">
+
+            this is paragrapg 2
+        </p>
+        <p> this paragraph 3 </p>
+    </div>
+    <script>
+        var n=document.createElement('p');
+        n.innerText=" heading special Divison"  //innerText also we can use here
+       // console.log(n);
+
+
+        var parent =document.getElementById("second");
+        parent.appendChild(n); //append method in js is add the new child add at end of the parent
+        console.log(parent.innerText);
+        //console.log(parent);
+
+
+
+        var last =document.getElementById("last");
+       // parent.insertBefore(n,last);   //between the childs
+       // last.remove();   //remove the direct element in html
+
+       //parent.removeChild(last);  //remove the child of the particular parent
+       //last.replaceChildren(n); // replace Method
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
